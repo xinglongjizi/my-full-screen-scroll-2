@@ -1,0 +1,69 @@
+*{
+	padding: 0;margin: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+.full-screen{
+	height: 100%;
+	overflow-y: hidden;
+}
+.group{
+	height: 100%;
+	position: relative;
+}
+.group > div{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	top: 0;
+	display: none;
+}
+.group > div:nth-of-type(1){
+	background: rgb(17,63,61);
+	display: block;
+}
+.group > div:nth-of-type(2){
+	background: rgb(60,79,57);
+}
+.group > div:nth-of-type(3){
+	background: rgb(95,92,51);
+}
+.group > div:nth-of-type(4){
+	background: rgb(179,214,110);
+}
+
+.nav-dot{
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	right: 0;
+}
+.nav-dot a{
+	display: block;
+	width: 20px;height: 20px;
+	border-radius: 50%;
+	margin-bottom: 12px;
+	background: url(../../nav_dot.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	transition: background .36s ease-out;
+}
+.nav-dot a.active{
+	background-position: top center;
+}
+
+
+
+
+
+
+
+
+
+
+
